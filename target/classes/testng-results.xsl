@@ -521,12 +521,12 @@
                     <table width="100%">
                         <tr>
                             <td align="center" id="chart-container">
-                                <script type="text/javascript">
-                                    renderSvgEmbedTag(<xsl:value-of select="$chartWidth"/>, <xsl:value-of select="$chartHeight"/>);
-                                </script>
-                            </td>
+
                         </tr>
-                    </table>
+                    </table>        <script type="text/javascript">
+                    renderSvgEmbedTag(<xsl:value-of select="$chartWidth"/>, <xsl:value-of select="$chartHeight"/>);
+                </script>
+                </td>
                     <xsl:for-each select="$suiteElements">
                         <xsl:variable name="testCaseElements"
                                       select="if (test/@url) then document(test/@url)/test else test"/>
