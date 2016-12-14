@@ -13,15 +13,17 @@ public class Test {
 
         // Create a new instance for Chrome Driver
         System.setProperty("webdriver.chrome.driver", "J:/AutomationDrivers/chromedriver.exe");
-        WebDriver chromeDriver = new ChromeDriver();
+       /* WebDriver chromeDriver = new ChromeDriver();
 
         //Launch google website
         //firefoxDriver.get("www.bing.com");
         chromeDriver.get("http://www.google.com");
 
         // Print a Log In message to the screen
-        System.out.println("Successfully opened the website ");
+        System.out.println("Successfully opened the website ");*/
 
+       verifyExtentReport report = new verifyExtentReport();
+        report.verifyLogin();
         //Wait for 5 Sec
      /*
      try {
