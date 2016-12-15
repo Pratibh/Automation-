@@ -9,7 +9,9 @@ public class Test {
         /* WebDriver firefoxDriver = new FirefoxDriver();*/
 
         // Create a new instance for Chrome Driver
-        System.setProperty("webdriver.chrome.driver", "E:/Automation/chromedriver.exe");
+       // System.setProperty("webdriver.chrome.driver", "E:/Automation/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "J:/AutomationDrivers/chromedriver.exe");
+
        /* WebDriver chromeDriver = new ChromeDriver();
 
         //Launch google website
